@@ -1,0 +1,17 @@
+class D16IntDouble 
+{
+	public static void main(String[] args) 
+	{
+		//int a = 2 + 2.5;
+		double a = 2  + 2.5;
+		System.out.println(a);
+	}
+}
+
+/*
+C:\javaTest\day0508>javac D16IntDouble.java
+D16IntDouble.java:5: error: incompatible types: possible lossy conversion from double to int
+                int a = 2 + 2.5;
+                          ^
+결과를 저장하려면 자료형이 더블이여함 
+*/

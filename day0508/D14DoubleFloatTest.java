@@ -1,0 +1,21 @@
+
+class D15DoubleFloatTest{
+	public static void main(String[] args){
+		double data1;
+		data1 = 26.7;
+		System.out.println(data1);
+
+		float data2; 
+		data2 = 26.7;
+		System.out.println(data2);
+	}
+}
+
+
+/*
+float형에 저장하는 실수값은 f를 붙여줘야 합니다...
+D14DoubleFloatTest.java:9: error: incompatible types: possible lossy conversion from double to float
+                data2 = 26.7;
+                        ^
+1 error
+*/
