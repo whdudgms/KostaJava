@@ -9,11 +9,11 @@ class D10SwapTest{
 
 		int tmp;
 
-		a = a ^ b;
+		a = a ^ b; // a와 b의 다른점 
 		System.out.println("a:"+a);
-		b = a ^ b;
+		b = a ^ b; // a
 		System.out.println("b:"+b);
-		a = a ^ b;
+		a = a ^ b; // a와  a와 b의 다른점의 다른점 
 		System.out.println("a:"+a);
 		
 		System.out.println("두 변수의 값을 서로 변경한 후");

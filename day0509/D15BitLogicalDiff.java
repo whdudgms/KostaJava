@@ -1,5 +1,4 @@
 
-
 class D15BitLogicalDiff {
 	public static void main(String[] args) {
 		int age1 = 28;
@@ -12,7 +11,6 @@ class D15BitLogicalDiff {
 		}else{
 			System.out.println("두 사람 모두 내년에는 30대가 아닐 수 있습니다.");
 		}
-
 		System.out.println(age1);
 		System.out.println(age2);
 	}

@@ -21,7 +21,8 @@ class D03ClubEnter
 
 		if(age >= 30 && height <= 170){
 			System.out.printf("%s님 입장 가능합니다.",name);
-		}
+		}else{
 			System.out.printf("%s님 입장 불가능합니다.",name);
+		}
 	}
 }

@@ -8,17 +8,12 @@ class D03ClubEnter
 		String name;
 		int age;
 		double height;
-
 		System.out.print("이름을 입력해 주세요!");
 		name = sc.next();
-
 		System.out.print("나이를 입력해 주세요!");
 		age = sc.nextInt();
-
 		System.out.print("키를 입력해 주세요!");
 		height = sc.nextDouble();
-
-
 		if(age >= 30 && height <= 170){
 			System.out.printf("%s님 입장 가능합니다.",name);
 		}else{
