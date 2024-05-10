@@ -1,0 +1,58 @@
+import java.util.Scanner;
+import java.util.Date;
+
+class Ssssss{
+	public static void main(String[] args) 
+	{
+		String name,isMan;
+		int year;
+		Scanner sc = new Scanner(System.in);
+		System.out.print("이름을 입력하세요 >");
+		name = sc.next();
+		System.out.print("성별이 남자면 Y아니면 N을 입력하세요 (대문자!) >");
+		isMan = sc.next();
+		System.out.print("출생년도를 입력하세요");
+		year = sc.nextInt();
+		Date date = new Date();
+
+		int preYear = date.getYear() + 1900;
+		int age = preYear - year;
+
+
+		// 성별로 컷 
+		if(!(isMan.equals("Y")|| isMan.equals("Y"))){
+			System.out.printf("%s님 성별을 똑바로 입력해요 %s는 잘못된 입력이에요",name,isMan);
+			return;
+		}
+		// 나이로 먼저 컷 
+		if(age <40){
+			System.out.printf("%s님 %d살이면 나이가 너무 어려요",name,age);
+			return; 
+		}
+		// 출생년도랑 당해년도의 홀짝 비교후 컷 
+		if(!((year % 2 ) == (preYear % 2))){
+			System.out.printf("%s님 %d살이면 나이가 너무 어려요 올해는 %d년도라 %d년도 출생년인 사람 차례가 아님", name, age, preYear, year);
+			return; 
+		}
+		
+		// 나이로 분류 (이미 40세 이상만 보여있음)
+		if(age <= 49){
+			//성별에 따른 분류 
+			if(isMan.equals("Y")){
+				System.out.printf("%s님 %d살이면 위암,간암",name,age);
+			}else{
+				System.out.printf("%s님 %d살이면 위암,간암,유방암,자궁암",name,age);
+			}
+		}else{
+		//50세 이상 
+			//성별에 따른 분류 
+			if(isMan.equals("Y")){
+								System.out.printf("%s님 %d살이면 위암,간암,대장암",name,age);
+			}else{
+				System.out.printf("%s님 %d살이면 위암,간암,유방암,자궁암,대장암",name,age);
+			}
+		}
+		
+
+	}
+}
