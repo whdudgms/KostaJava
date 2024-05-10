@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class  D34SumTest {
+	public static void main(String[] args){
+		Scanner sc = new Scanner(System.in);
+		System.out.print(" >");
+		int result = 0;
+		for(int i = 10; i <= 30; i++){
+			for(int j = 0; j <= 5; j++){
+				result += (i * j);
+			}
+		}
+		System.out.println(result);
+	}
+}

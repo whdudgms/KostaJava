@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+class D07LastDateSwitch
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc =  new Scanner(System.in);
+		int month, lastDate = 31;
+		System.out.print("월을 입력하시오 ->");
+		month = sc.nextInt();
+
+		if(month < 1 || month > 12){
+			System.out.println("입력오류");
+			return;
+		}
+
+
+		switch(month){
+			case 1: 
+			case 3:
+			case 5:
+			case 7:
+			case 8:
+			case 10:
+			case 12:
+				lastDate = 31;
+				break;
+			case 4:
+			case 6:
+			case 9:
+			case 11:
+				lastDate = 30;
+				break;
+			case 2:
+				lastDate = 28;
+				break;
+		}
+		
+		System.out.printf("%d월은 %d일까지 있어요",month,lastDate);
+	}
+}
