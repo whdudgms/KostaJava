@@ -7,13 +7,14 @@ class Ssssss{
 		String name,isMan;
 		int year;
 		Scanner sc = new Scanner(System.in);
+		Date date = new Date();
 		System.out.print("이름을 입력하세요 >");
 		name = sc.next();
 		System.out.print("성별이 남자면 Y아니면 N을 입력하세요 (대문자!) >");
 		isMan = sc.next();
 		System.out.print("출생년도를 입력하세요");
 		year = sc.nextInt();
-		Date date = new Date();
+		
 
 		int preYear = date.getYear() + 1900;
 		int age = preYear - year;
@@ -53,7 +54,7 @@ class Ssssss{
 		//50세 이상 
 			//성별에 따른 분류 
 			if(isMan.equals("Y")){
-								System.out.printf("%s님 %d살이면 위암,간암,대장암",name,age);
+				System.out.printf("%s님 %d살이면 위암,간암,대장암",name,age);
 			}else{
 				System.out.printf("%s님 %d살이면 위암,간암,유방암,자궁암,대장암",name,age);
 			}
